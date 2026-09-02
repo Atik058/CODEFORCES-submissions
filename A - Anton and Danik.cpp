@@ -1,28 +1,25 @@
-#include <bits/stdc++.h>
- 
+
+#include<iostream>
 using namespace std;
- 
-int main()
+main()
 {
-    int n,i,s=0,d=0;
+    int n,a=0,d=0;
     cin>>n;
-    string a;
-    cin>>a;
-    for(i=0;i<=n;i++)
+    char s[n];
+    cin>>s;
+    for(int i=0;i<n;i++)
     {
-        if(a[i]=='A')
-        {
-            s++;
-        }
-        if(a[i]=='D')
-        {
+        if(s[i]=='A')
+            a++;
+        else
             d++;
-        }
     }
-    if(s>d)
+    if(a>d)
         cout<<"Anton";
-    else if(s<d)
+    else if(a<d)
         cout<<"Danik";
-    else if(s==d)
+    else
         cout<<"Friendship";
+ 
+ 
 }
